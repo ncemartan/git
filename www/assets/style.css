@@ -1,0 +1,354 @@
+@charset "utf-8"
+
+*{
+	margin: 0;
+	padding: 0;
+	
+}
+
+html{
+	height: 100%;
+
+}
+
+body{
+	outline: none;/*the outline is not shown when clicked*/
+	margin:0; 
+	width: 100%;
+	height: 100%;
+	color: #333;
+	background: #f7f7f7;
+	/*font-size: calc(14px + (20-14)*((100vw - 300px) / (1200 - 300))); /*the font will change it's size depending of the device accesig the page*/
+	/*line-height: calc(1.3em + (1.5 - 1.2)*((100vw - 300px) / (1200 - 300))); /*the line-height becomes responsive*/ 
+	font-size: 25px;
+	line-height: 15px;
+	font-family: "Segoe UI", sans-serif; /*the second font-family will work if the first doesn't*/
+    line-height: 135%; /*the height of the line for a paragraph*/
+
+}
+
+
+a {
+	color: #e54529;
+	text-decoration: none; /*links are not underlined*/
+    transition: all.6s ease;              /*the links will change smoothly their color*/
+    -moz-transition: all.6s ease; /*for mozilla transition*/
+    -webkit-transition: all.6s ease; /*for safari transition effect*/
+    -ms-transition: all.6s ease; /*for windows*/
+}
+
+a:hover {       /*when the mouse is over the link*/
+	color: #5e8ac4;
+	text-decoration: none; /*links are not underlined*/
+    transition: all.6s ease;              /*the links will change smoothly their color*/
+    -moz-transition: all.6s ease; /*for mozilla transition*/
+    -webkit-transition: all.6s ease; /*for safari transition effect*/
+    -ms-transition: all.6s ease; /*for windows*/
+}
+
+a:active{  /*when the link was accesed*/
+	color: #5ec463;
+}
+
+img{
+	max-width: 100%;
+	height: auto;
+	width: auto\9;
+}
+
+hr{
+	display: block;
+	border: 0;
+	height: 1px;
+	border-top: 1px solid #ccc;
+	padding: 0;
+}
+
+/*when selecting smth -  block Start*/
+
+::selection{background: #6ddd18; color: #fff;}
+::-moz-selection{background: #6ddd18; color: #fff;}
+
+
+/*when selecting smth - block End*/
+header, footer {
+ width: 98%;
+ background-color: lightgray;
+ float: left;
+ /*min-height: 50px; */ /*if the pic is higher than 50px the header, footer height changes and the pic does not go above*/
+}
+
+header{
+
+	border-bottom: 2px solid silver;
+	padding: 1%;
+	min-height: 50px;
+}
+
+#logo{
+	font-size: 1.3em;
+	font-family: Comic Sans MS, sans-serif;
+    color: black;
+}
+
+.right{	float: right;}
+
+.left{	float: left;}
+
+.clear{clear: both;}
+.contact{
+	/*font-size: calc(14px + (20-14)*((100vw - 300px) / (1200 - 300)));
+	line-height: calc(1.3em + (1.4 - 1.2)*((100vw - 300px) / (1200 - 300)));
+	*/
+	font-size: 25px;
+	line-height: 15px;
+	font-family: Comic Sans MS, sans-serif;
+    margin-left: 20px;
+}
+
+input[type=search].field{
+	border-radius: 5px;
+	border: 2px solid silver;
+	padding: 5px;
+	margin-left: 20px;
+}
+
+/*when clicked on the input the border changes its color*/
+input[type=search].field:focus{
+	border: 2px solid #6ddd18;
+	outline: none;/*the outline is not shown when clicked*/
+}
+
+#menu{
+	color: #134968;
+	font-family: Comic Sans MS, sans-serif;
+	/*font-size: calc(12px + (20-12)*((100vw - 300px) / (1200 - 300)));
+	line-height: calc(1.3em + (1.4 - 1.2)*((100vw - 300px) / (1200 - 300)));
+*/
+    font-size: 25px;
+    line-height: 15px;
+}
+
+#menu hr{
+	width: 500px;
+	max-width: 100%;
+	margin-top: 5px;
+	margin-bottom: 10px;
+
+ }
+#menuHrefs{
+padding-bottom: 10px;
+}
+
+#menuHrefs a{
+    padding: 5px;
+    border-radius: 5px;
+    margin-right: 5px;
+    color: #626262;
+
+}
+
+#menuHrefs a:hover{
+	background-color: #bcd4e2;
+	color: white;
+}
+
+
+
+/*Articles*/
+
+#wrapper{
+	float: left;
+	width: 100%;
+
+}
+
+#wrapper #articles{
+     float: left;
+     width: 80%;
+     margin-left: 10%;
+}
+
+#wrapper #articles article{
+	float: left;
+	width: 31.33333%;
+	border: 1px solid silver;
+	box-sizing: border-box;
+	border-radius: 5px;
+	background-color: #e8f6ff; 
+	margin-right: 2%;
+	min-height: 400px;
+	height: 890px;
+
+}
+
+#wrapper #articles article img{
+	width: 100%;
+	height: 300px;
+	border-radius: 5px 5px 0 0;
+	border-bottom: 2px solid #93969b;
+	margin-bottom: 10px;
+}
+
+#wrapper #articles article h2{
+	width: 90%;
+	margin-left: 5%;
+	font-weight: normal;
+	font-size: 1.4em;
+	color: #93969b;
+	text-align: center; 
+}
+
+#wrapper #articles article p{
+	width: 80%;
+	margin-left: 10%;
+	font-size: 17px; 
+	text-indent: 1em;
+
+}
+
+#wrapper #articles article a{
+	padding: 10px 5px;
+	background-color: #8a8c8e;
+	margin-left: 5%;
+	border-radius: 25px;
+	color: #fff;
+	margin-top: 10px;
+	float: left;
+
+}
+
+#wrapper #articles article a:hover{
+	background-color: #b7958f;
+	color: #424344;
+}
+
+/*Styles for About-us-page*/
+
+#about_us{
+	width: 60%;
+	float: left;
+	background-color: #fafafa;
+	border-radius: 5px;
+	border: 1px solid silver;
+	box-sizing: border-box;
+	padding: 1%;
+}
+
+#columnRight{
+	width: 30%;
+	float: left;
+	margin-left: 5%;
+	background-color: #fafafa;
+	border-radius: 5px;
+	border: 1px solid silver;
+	box-sizing: border-box;
+	padding: 1%;
+}
+
+/*Styles for Feedback page*/
+
+form {
+	width: 60%;
+	margin-left: 20%;
+	float: left;
+}
+
+form label{
+    float: left;
+     width: 100%;
+    margin-bottom: 10px;
+
+}
+
+form input {
+    border-radius: 5px;
+    border: 2px solid silver;
+    padding: 5px;  
+    float: left;
+    clear: both;
+    margin-bottom: 10px;
+    width: 40%;
+    background-color: #fafafa;
+}
+
+form input:focus, form textarea:focus {
+	border: 2px solid green;
+}
+
+form textarea {
+	width: 60%;
+	float: left;
+	clear: both;
+	background-color: #fafafa;
+	border: 2px solid silver;
+	border-radius: 7px;
+	padding: 10px;
+	font-size: 0.8em;
+
+}
+
+
+/*Styles for Registration part*/
+
+
+
+
+/*Central Block of the site*/
+
+#main_soc_block{
+	width: 100%;
+	padding: 2% 0;
+	border-bottom: 2px solid silver;
+	border-top: 2px solid silver;
+	margin: 20px 0;
+	float: left;
+	background: url('img/pic3.JPG') repeat-x center;
+    height: 240px;
+}
+
+#main_soc_block_in{
+text-align: center;
+padding: 1%;
+height: 200px;
+background-color: #fff9f9;
+border: 1px solid silver;
+border-radius: 7px;
+width: 500px;
+}
+
+#main_soc_block_in a{
+	float: left;
+	padding: 5px 10px;
+	background-color: #e9af32;
+	border-radius: 7px;
+    color: #fff;
+    margin-left: 40%;
+}
+
+/*Footer part Start*/
+
+footer{
+	border-top: 2px solid silver;
+	margin-top: 10px;
+	padding: 1%;
+    min-height: 50px;
+}
+
+/*!!!Page Wrap!!!*/
+
+#page-wrap:after{
+	content: "";
+	display: block;
+
+}
+
+footer, #page-wrap:after {height: 10px;}
+
+#page-wrap{
+	min-height: 100%;
+	margin-bottom: -10px;/*minus those footer and #page-wrap height*/
+}
+ #page-wrap p{
+ 	text-indent: 1em;
+ }
