@@ -114,6 +114,7 @@ input[type=search].field{
 }
 
 /*when clicked on the input the border changes its color*/
+
 input[type=search].field:focus{
 	border: 2px solid #6ddd18;
 	outline: none;/*the outline is not shown when clicked*/
